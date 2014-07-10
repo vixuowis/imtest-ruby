@@ -2,8 +2,8 @@
 def read_out_file(filename)
   arr = {}  
   File.open(filename).each do |l|
-    puts l.split(":").to_s
-    arr[l.split(":")[0].to_i] = l.split(":")[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
+    puts l.split("：").to_s
+    arr[l.split("：")[0].to_i] = l.split("：")[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
   end
   return arr
 end
@@ -23,9 +23,9 @@ end
 
 ciku_file = "dict/sc_pinyin.txt"
 # ciku_file = "dict/short_pinyin.txt"
-local_arr = read_out_file("output/local_out.txt")
+# local_arr = read_out_file("output/local_out.txt")
 # local_arr = read_out_file("output/qq_out.txt")
-# local_arr = read_out_file("output/sogou_out.txt")
+local_arr = read_out_file("output/sogou_short_out.txt")
 puts local_arr.to_s
 # read ciku file
 
@@ -52,7 +52,13 @@ puts "std1 = #{std1*1.0/t}"
 puts "std2 = #{std2*1.0/t}"
 puts "std3 = #{std3*1.0/t}"
 
+### short pinyin
+## big data scale: 1925 from tencent data
 
+# sogou
+# std1 = 0.6763636363636364
+# std2 = 0.8171428571428572
+# std3 = 0.8597402597402597
 
 ### full pinyin
 ## big data scale: 1925 from tencent data
