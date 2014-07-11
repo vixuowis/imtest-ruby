@@ -56,6 +56,7 @@ def test_file(target_file, out_file,type)
   end
 end
 
-test_file("dict/short_pinyin.txt","output/qq_short_out.txt",31)
-# test_file("dict/sc_pinyin.txt","output:sogou_out.txt",31)
-# test_file("dict/sc_pinyin.txt","output:local_out.txt",29)
+test_file("dict/short_hot_pinyin.txt","output/local_hot_out.txt",29)
+# test_file("dict/short_pinyin.txt","output/qq_short_out.txt",31)
+# test_file("dict/sc_pinyin.txt","output/sogou_out.txt",31)
+# test_file("dict/sc_pinyin.txt","output/local_out.txt",29)
