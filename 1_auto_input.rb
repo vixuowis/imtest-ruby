@@ -57,6 +57,15 @@ def test_file(target_file, out_file,type)
   end
 end
 
+# EXPERIMENT 5
+# test_file("dict/full_baiduhot_pinyin.txt","output/local_baidushort_out.txt",29)
+# test_file("dict/full_baiduhot_pinyin.txt","output/qq_baidushort_out.txt",31)
+# test_file("dict/full_baiduhot_pinyin.txt","output/sogou_baidushort_out.txt",31)
+
+# test_file("dict/short_baiduhot_pinyin.txt","output/local_baidufull_out.txt",29)
+# test_file("dict/short_baiduhot_pinyin.txt","output/qq_baidufull_out.txt",31)
+# test_file("dict/short_baiduhot_pinyin.txt","output/sogou_baidufull_out.txt",31)
+
 # test_file("dict/short_hot_pinyin.txt","output/local_hot_out.txt",29)
 # test_file("dict/short_pinyin.txt","output/qq_short_out.txt",31)
 # test_file("dict/short_hot_pinyin.txt","output/sogou_hot_out.txt",31)

@@ -1,13 +1,15 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 from pinyin import PinYin
+import sys
 
 if __name__ == "__main__":
   test = PinYin()
   test.load_word()
   # string = "钓鱼岛是中国的"
-  f = open("dict/hot_raw_list.txt",'r')
-  f2 = open("dict/short_hot_pinyin.txt",'w')
+  f = open("dict/"+sys.argv[1],'r')
+  f2 = open("dict/"+sys.argv[2],'w')
+  f3 = open("dict/"+sys.argv[3],'w')
   for i in f:
     # ch_str = i.split(" ")[1].strip()
     ch_str = i.strip()
@@ -23,8 +25,10 @@ if __name__ == "__main__":
 
     print short_str
     f2.write(short_str+" "+ch_str+"\n")
+    f3.write("".join(short_arr)+" "+ch_str+"\n")
 
   f2.close()
+  f3.close()
   # print "in: %s" % string
   # print "out: %s" % str(test.hanzi2pinyin(string=string))
   # print "out: %s" % test.hanzi2pinyin_split(string=string, split="-")

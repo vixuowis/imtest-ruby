@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        <title>七日关注排行榜--百度搜索风云榜</title>
+        
+		<base href="http://top.baidu.com/" />  
+														<link rel="stylesheet" href="http://top.baidu.com/frontend/static/common/common.min.css" />
+			<script type="text/javascript" src="http://top.baidu.com/frontend/build/common/lib.js?v=1603164988"></script>
+        		<script>var bt = baidu.template, BASE_URL = "http://top.baidu.com/", BASEURL = "http://top.baidu.com/frontend";</script>
+	    
+	        <link rel="stylesheet" href="http://top.baidu.com/frontend/static/buzz/buzz.min.css?v=1603164988" />
+    	
+    </head>
+    <body class="">		
+		 <div class="wrapper">
+            <div class="header">
+    <div class="lg">
+        <a href="./?vit=1"><img src="http://top.baidu.com/frontend/static/common/logo.png" alt="搜索风云榜" title="搜索风云榜" /></a>
+    </div>
+    <div id="ba_sc">
+        <p id="ba_nv"> <a target="_blank" name="tj_news" href="http://news.baidu.com/">新闻</a>　<a target="_blank" name="tj_ps" href="http://www.baidu.com/">网页</a>　<strong class="bold">风云榜</strong>　<a target="_blank" name="tj_tieba" href="http://tieba.baidu.com/">贴吧</a>　 <a target="_blank" name="tj_zhidao" href="http://zhidao.baidu.com/">知道</a>　 <a target="_blank" name="tj_music" href="http://music.baidu.com/">音乐</a>　 <a target="_blank" name="tj_img" href="http://image.baidu.com/">图片</a>　 <a target="_blank" name="tj_video" href="http://video.baidu.com/">视频</a>　 <a target="_blank" name="tj_map" href="http://map.baidu.com/">地图</a>　 <a target="_blank" name="tj_index" href="http://index.baidu.com/">指数</a> </p>
+        <form id="ba_fm" action="http://www.baidu.com/s" name="f" target="_blank">
+            <span class="s_ipt_wr">
+                <input value="" data-default="肛门撕裂" maxlength="100" class="s_ipt" name="wd" id="sword">
+            </span>
+            <span class="s_btn_wr"> 
+                <input type="submit" id="ba_baidu" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" value="百度一下">
+            </span>
+        </form>
+    </div>
+    <p class="ba_hp">
+        <a href="./help" id="ba_link_help">帮助</a> | <a id="feedback_bd" href="javascript:;">反馈</a> | <a target="_blank" href="http://tieba.baidu.com/p/1990262134">论坛</a> | <a class="fred" target="_blank" href="./add">定制榜单</a> | <a href="./about">无线入口</a>
+    </p>
+    
+</div>
+
+            <div id="nav" class="nav"><ul id="main-nav"><li> <a href="./?vit=1">首页</a> </li><li> <a href="./news">风云时讯</a> </li><li><a href="category?c=1">娱乐</a><ul class="sub-nav"><li><a href="./category?c=1">电影</a></li><li><a href="./category?c=2">电视剧</a></li><li><a href="./category?c=3">综艺</a></li><li><a href="./category?c=33">音乐</a></li><li><a href="./category?c=5">动漫</a></li></ul></li><li><a href="./category?c=9">人物</a><ul class="sub-nav"><li><a href="./buzz?b=258">热点人物</a></li><li><a href="./buzz?b=618">娱乐名人</a></li><li><a href="./buzz?b=18">女演员</a></li><li><a href="./buzz?b=17">男演员</a></li><li><a href="./buzz?b=16">女歌手</a></li><li><a href="./buzz?b=15">男歌手</a></li><li><a href="./buzz?b=454">主持人</a></li><li><a href="./buzz?b=255">体坛人物</a></li><li><a href="./buzz?b=3">美女</a></li><li><a href="./buzz?b=22">帅哥</a></li></ul></li><li><a href="./category?c=10">小说</a><ul class="sub-nav"><li><a href="./buzz?b=7">全部</a></li><li><a href="./buzz?b=1393">热点推荐</a></li><li><a href="./buzz?b=1394">潜力新书</a></li><li><a href="./buzz?b=353">玄幻奇幻</a></li><li><a href="./buzz?b=354">仙侠</a></li><li><a href="./buzz?b=355">言情</a></li><li><a href="./buzz?b=356">悬疑</a></li><li><a href="./buzz?b=459">历史军事</a></li><li><a href="./buzz?b=461">完结</a></li><li><a href="./buzz?b=460">免费</a></li></ul></li><li><a href="./category?c=7">事件</a><ul class="sub-nav"><li><a href="./buzz?b=341">全部</a></li><li><a href="./buzz?b=342">社会民生</a></li><li><a href="./buzz?b=344">娱乐八卦</a></li><li><a href="./buzz?b=11">体育热点</a></li></ul></li><li><a href="./category?c=16">游戏</a><ul class="sub-nav"><li><a href="./buzz?b=173">网页游戏</a></li><li><a href="./buzz?b=62">网游</a></li><li><a href="./buzz?b=451">小游戏</a></li><li><a href="./buzz?b=524">手机网游</a></li><li><a href="./buzz?b=523">手游单机</a></li></ul></li><li><a href="./category?c=18">汽车</a><ul class="sub-nav"><li><a href="./buzz?b=176">热搜汽车</a></li><li><a href="./buzz?b=179">紧凑型车</a></li><li><a href="./buzz?b=285">SUV</a></li><li><a href="./buzz?b=420">汽车品牌</a></li></ul></li><li> <a href="./boards">全部榜单</a> </li><li> <a href="./region">地域风向标</a> </li><li class="last"> <a href="./population">人群风向标</a> </li></ul></div>
+
+            
+<div id="main" class="main">
+         <div id="flist" class="w_139">
+            <div class="hblock">
+                <ul>
+                                            <li><a class="bb" title="热搜榜单首页" href="./category?c=12">热搜榜单首页</a></li>
+                                                                			   
+                            <li>
+                                <a class="odd " title="实时热点" href="./buzz?b=1&c=12">实时热点</a>
+                            </li>
+                        			   
+                            <li>
+                                <a class=" se" title="七日关注" href="./buzz?b=42&c=12">七日关注</a>
+                            </li>
+                        			   
+                            <li>
+                                <a class="odd " title="热门搜索" href="./buzz?b=2&c=12">热门搜索</a>
+                            </li>
+                        			   
+                            <li>
+                                <a class=" " title="世说新词" href="./buzz?b=396&c=12">世说新词</a>
+                            </li>
+                                                            </ul>
+            </div>
+	            </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="mainBody">
+	    <div class="grayborder">
+            <div class="top-title">
+                                <h2>七日关注排行榜</h2><a target="_blank" href="http://top.baidu.com/add"><img title="将此榜单添加到我的网站" src="http://top.baidu.com/frontend/static/buzz/images/add-list.gif" alt="" /></a>
+            </div>
+		
+				
+				
+
+
+
+<table class="list-table">
+	<tr>
+		<th width="50" class="first">排名</th>
+		<th>关键词</th>
+		<th width="30%" class="tc">相关链接</th>
+		<th width="20%" class="last">搜索指数</th>
+	</tr>
+	<tr class="hideline">
+		<td class="first">
+							<span class="num-top">1</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B9%C5%BD%A3%C6%E6%CC%B7">古剑奇谭</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B9%C5%BD%A3%C6%E6%CC%B7" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B9%C5%BD%A3%C6%E6%CC%B7">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B9%C5%BD%A3%C6%E6%CC%B7">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B9%C5%BD%A3%C6%E6%CC%B7">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">5242413</span>
+					</td>
+	</tr>
+		<tr class="item-tr">
+		<td colspan="4">
+			            <div class="item-info clearfix">
+    <a href="./detail?b=42&w=%B9%C5%BD%A3%C6%E6%CC%B7&c=12" class="item-img" target="_blank">
+	<img onload='this.style.width = (this.width > 80 && this.width/this.height >= 80/87) ? "80px" : "auto";this.style.height = (this.height > 87 && this.width/this.height < 80/87) ? "87px" : "auto";' src="http://imgsrc.baidu.com/baike/abpic/item/f9198618367adab435f2a39189d4b31c8601e4c6.jpg" />
+    </a>    <p class="item-text">
+	<a href="./detail?b=42&w=%B9%C5%BD%A3%C6%E6%CC%B7&c=12" target="_blank">《古剑奇谭WEB》是由百度游戏独家代理，由墨麟集团全力开发的一款精品ARPG网页游戏，对经典同名单机游戏进行重新演绎。玩家将化身百里屠苏和风晴雪，亲历唯美大气的动人旅程，享受一场古典仙侠文化盛宴。独创琴心系统、剑魄变身玩法，配合华丽酣畅的即时制战斗，在熟悉的古剑世界里，带您重温侠骨柔情的感动。《古剑奇谭WEB》将在2014年夏携强势推出，在炎炎夏日掀起绚烂磅礴的古剑浪潮！</a>
+    </p>
+</div>
+
+    
+		</td>
+	</tr>
+		<tr class="hideline">
+		<td class="first">
+							<span class="num-top">2</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C9%D9%C5%AE%CE%AA%C2%F2ipad%C5%C4%C2%E3%D5%D5%D7%AC%C7%AE">少女为买ipad拍裸照赚钱</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C9%D9%C5%AE%CE%AA%C2%F2ipad%C5%C4%C2%E3%D5%D5%D7%AC%C7%AE" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C9%D9%C5%AE%CE%AA%C2%F2ipad%C5%C4%C2%E3%D5%D5%D7%AC%C7%AE">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C9%D9%C5%AE%CE%AA%C2%F2ipad%C5%C4%C2%E3%D5%D5%D7%AC%C7%AE">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C9%D9%C5%AE%CE%AA%C2%F2ipad%C5%C4%C2%E3%D5%D5%D7%AC%C7%AE">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">417097</span>
+					</td>
+	</tr>
+		<tr class="item-tr">
+		<td colspan="4">
+			            <div class="item-news">
+    		<div class="item-headline">
+	    <a class="info-title" href="./detail?b=42&w=%C9%D9%C5%AE%CE%AA%C2%F2ipad%C5%C4%C2%E3%D5%D5%D7%AC%C7%AE&c=12" title="女子误将裸照发给父亲被责骂愚蠢 网友看热闹" target="_blank">女子误将裸照发给父亲被责骂愚蠢 网友看热闹</a>
+	    <p class="info-text">中新网7月11日电 据外媒报道,美国女子尼娅本打算把裸照传给男友,却错手发了...相关阅读: 裸照误发 ·少女为买iPad拍裸照赚钱 钱没拿到照片险传网上 2014.07...</p>
+	</div>
+	</div>
+
+    
+		</td>
+	</tr>
+		<tr class="hideline">
+		<td class="first">
+							<span class="num-top">3</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B0%CD%CE%F7vs%B5%C2%B9%FA">巴西vs德国</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B0%CD%CE%F7vs%B5%C2%B9%FA" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B0%CD%CE%F7vs%B5%C2%B9%FA">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B0%CD%CE%F7vs%B5%C2%B9%FA">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B0%CD%CE%F7vs%B5%C2%B9%FA">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">405185</span>
+					</td>
+	</tr>
+		<tr class="item-tr">
+		<td colspan="4">
+			            <div class="item-news">
+    		<div class="item-headline">
+	    <a class="info-title" href="./detail?b=42&w=%B0%CD%CE%F7vs%B5%C2%B9%FA&c=12" title="巴西VS荷兰德国VS阿根廷比分预测:德国不惧阿根廷 阿根廷不败" target="_blank">巴西VS荷兰德国VS阿根廷比分预测:德国不惧阿根廷 阿根廷不败</a>
+	    <p class="info-text">摘要: 24年后,阿根廷再次打进世界杯决赛,而在决赛中等待着他们的还是那个老对手——德国!1990年世界杯决赛,正是德国人在决赛中1比0击败阿根廷,终结了马拉多纳的卫冕...</p>
+	</div>
+	</div>
+
+    
+		</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">4</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D6%D0%B9%FA%C8%E9%C9%F1%D0%D8%BC%D0%CA%D6%BB%FA">中国乳神胸夹手机</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D6%D0%B9%FA%C8%E9%C9%F1%D0%D8%BC%D0%CA%D6%BB%FA" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D6%D0%B9%FA%C8%E9%C9%F1%D0%D8%BC%D0%CA%D6%BB%FA">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D6%D0%B9%FA%C8%E9%C9%F1%D0%D8%BC%D0%CA%D6%BB%FA">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D6%D0%B9%FA%C8%E9%C9%F1%D0%D8%BC%D0%CA%D6%BB%FA">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">239038</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">5</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D3%A2%B9%FA%CD%F5%E5%FA%C0%EB%BB%E9%CB%F7%C5%E22%D2%DA">英国王妃离婚索赔2亿</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D3%A2%B9%FA%CD%F5%E5%FA%C0%EB%BB%E9%CB%F7%C5%E22%D2%DA" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D3%A2%B9%FA%CD%F5%E5%FA%C0%EB%BB%E9%CB%F7%C5%E22%D2%DA">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D3%A2%B9%FA%CD%F5%E5%FA%C0%EB%BB%E9%CB%F7%C5%E22%D2%DA">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D3%A2%B9%FA%CD%F5%E5%FA%C0%EB%BB%E9%CB%F7%C5%E22%D2%DA">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">236361</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">6</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B8%BB%B6%FE%B4%FA%D3%EB%BD%A3%C7%C5%D1%A7%B0%D4%C0%EB%BB%E9">富二代与剑桥学霸离婚</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B8%BB%B6%FE%B4%FA%D3%EB%BD%A3%C7%C5%D1%A7%B0%D4%C0%EB%BB%E9" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B8%BB%B6%FE%B4%FA%D3%EB%BD%A3%C7%C5%D1%A7%B0%D4%C0%EB%BB%E9">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B8%BB%B6%FE%B4%FA%D3%EB%BD%A3%C7%C5%D1%A7%B0%D4%C0%EB%BB%E9">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B8%BB%B6%FE%B4%FA%D3%EB%BD%A3%C7%C5%D1%A7%B0%D4%C0%EB%BB%E9">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">214074</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">7</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%BA%C9%C0%BCvs%B0%A2%B8%F9%CD%A2">荷兰vs阿根廷</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%BA%C9%C0%BCvs%B0%A2%B8%F9%CD%A2" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%BA%C9%C0%BCvs%B0%A2%B8%F9%CD%A2">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BA%C9%C0%BCvs%B0%A2%B8%F9%CD%A2">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BA%C9%C0%BCvs%B0%A2%B8%F9%CD%A2">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">212719</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">8</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C4%D0%C8%CB%B4%A9%CF%F0%BD%BA%D2%C2%B1%E4%C5%AE%C8%CB">男人穿橡胶衣变女人</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C4%D0%C8%CB%B4%A9%CF%F0%BD%BA%D2%C2%B1%E4%C5%AE%C8%CB" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C4%D0%C8%CB%B4%A9%CF%F0%BD%BA%D2%C2%B1%E4%C5%AE%C8%CB">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C4%D0%C8%CB%B4%A9%CF%F0%BD%BA%D2%C2%B1%E4%C5%AE%C8%CB">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C4%D0%C8%CB%B4%A9%CF%F0%BD%BA%D2%C2%B1%E4%C5%AE%C8%CB">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">193547</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">9</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%CC%EC%BA%F3%CE%FC%B6%BE">天后吸毒</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%CC%EC%BA%F3%CE%FC%B6%BE" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%CC%EC%BA%F3%CE%FC%B6%BE">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CC%EC%BA%F3%CE%FC%B6%BE">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CC%EC%BA%F3%CE%FC%B6%BE">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">181449</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">10</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C4%DA%C2%ED%B6%FB%CC%E6%C9%ED%C6%D8%B9%E2">内马尔替身曝光</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C4%DA%C2%ED%B6%FB%CC%E6%C9%ED%C6%D8%B9%E2" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C4%DA%C2%ED%B6%FB%CC%E6%C9%ED%C6%D8%B9%E2">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C4%DA%C2%ED%B6%FB%CC%E6%C9%ED%C6%D8%B9%E2">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C4%DA%C2%ED%B6%FB%CC%E6%C9%ED%C6%D8%B9%E2">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">153531</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">11</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C4%D0%D7%D3%B9%AB%BD%BB%C9%CF%D3%FB%D0%D4%C7%D6%C5%AE%B3%CB%BF%CD">男子公交上欲性侵女乘客</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C4%D0%D7%D3%B9%AB%BD%BB%C9%CF%D3%FB%D0%D4%C7%D6%C5%AE%B3%CB%BF%CD" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C4%D0%D7%D3%B9%AB%BD%BB%C9%CF%D3%FB%D0%D4%C7%D6%C5%AE%B3%CB%BF%CD">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C4%D0%D7%D3%B9%AB%BD%BB%C9%CF%D3%FB%D0%D4%C7%D6%C5%AE%B3%CB%BF%CD">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C4%D0%D7%D3%B9%AB%BD%BB%C9%CF%D3%FB%D0%D4%C7%D6%C5%AE%B3%CB%BF%CD">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">148363</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">12</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%BA%C9%C0%BCvs%B8%E7%CB%B9%B4%EF%C0%E8%BC%D3">荷兰vs哥斯达黎加</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%BA%C9%C0%BCvs%B8%E7%CB%B9%B4%EF%C0%E8%BC%D3" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%BA%C9%C0%BCvs%B8%E7%CB%B9%B4%EF%C0%E8%BC%D3">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BA%C9%C0%BCvs%B8%E7%CB%B9%B4%EF%C0%E8%BC%D3">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BA%C9%C0%BCvs%B8%E7%CB%B9%B4%EF%C0%E8%BC%D3">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fall">146566</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">13</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C5%ED%C0%F6%E6%C2%CE%AA%CF%B0%BD%FC%C6%BD%C2%F2%B5%B0%B8%E2">彭丽媛为习近平买蛋糕</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C5%ED%C0%F6%E6%C2%CE%AA%CF%B0%BD%FC%C6%BD%C2%F2%B5%B0%B8%E2" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C5%ED%C0%F6%E6%C2%CE%AA%CF%B0%BD%FC%C6%BD%C2%F2%B5%B0%B8%E2">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C5%ED%C0%F6%E6%C2%CE%AA%CF%B0%BD%FC%C6%BD%C2%F2%B5%B0%B8%E2">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C5%ED%C0%F6%E6%C2%CE%AA%CF%B0%BD%FC%C6%BD%C2%F2%B5%B0%B8%E2">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">146106</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">14</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C4%E3%BA%C3%CD%E2%D0%C7%C8%CB">你好外星人</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C4%E3%BA%C3%CD%E2%D0%C7%C8%CB" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C4%E3%BA%C3%CD%E2%D0%C7%C8%CB">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C4%E3%BA%C3%CD%E2%D0%C7%C8%CB">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C4%E3%BA%C3%CD%E2%D0%C7%C8%CB">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">131969</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">15</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C4%DA%C2%ED%B6%FB%C5%AE%D3%D1%B4%F3%BF%DE">内马尔女友大哭</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C4%DA%C2%ED%B6%FB%C5%AE%D3%D1%B4%F3%BF%DE" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C4%DA%C2%ED%B6%FB%C5%AE%D3%D1%B4%F3%BF%DE">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C4%DA%C2%ED%B6%FB%C5%AE%D3%D1%B4%F3%BF%DE">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C4%DA%C2%ED%B6%FB%C5%AE%D3%D1%B4%F3%BF%DE">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">128189</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">16</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D6%D0%B9%FA%CD%E6%B2%BB%C6%F0%D7%E3%C7%F2">中国玩不起足球</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D6%D0%B9%FA%CD%E6%B2%BB%C6%F0%D7%E3%C7%F2" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D6%D0%B9%FA%CD%E6%B2%BB%C6%F0%D7%E3%C7%F2">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D6%D0%B9%FA%CD%E6%B2%BB%C6%F0%D7%E3%C7%F2">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D6%D0%B9%FA%CD%E6%B2%BB%C6%F0%D7%E3%C7%F2">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">127309</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">17</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B0%A2%B8%F9%CD%A2vs%B1%C8%C0%FB%CA%B1">阿根廷vs比利时</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B0%A2%B8%F9%CD%A2vs%B1%C8%C0%FB%CA%B1" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B0%A2%B8%F9%CD%A2vs%B1%C8%C0%FB%CA%B1">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B0%A2%B8%F9%CD%A2vs%B1%C8%C0%FB%CA%B1">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B0%A2%B8%F9%CD%A2vs%B1%C8%C0%FB%CA%B1">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fall">127236</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">18</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%CB%D5%D1%C0%B1%E4%C7%E9%C8%A4%D3%C3%C6%B7">苏牙变情趣用品</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%CB%D5%D1%C0%B1%E4%C7%E9%C8%A4%D3%C3%C6%B7" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%CB%D5%D1%C0%B1%E4%C7%E9%C8%A4%D3%C3%C6%B7">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CB%D5%D1%C0%B1%E4%C7%E9%C8%A4%D3%C3%C6%B7">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CB%D5%D1%C0%B1%E4%C7%E9%C8%A4%D3%C3%C6%B7">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fall">123834</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">19</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B5%CB%D7%CF%C6%E5%BD%E9%C8%EB%D5%C5%BD%DC%D0%BB%C4%C8">邓紫棋介入张杰谢娜</a>
+			<span class="icon icon-new"></span>						<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B5%CB%D7%CF%C6%E5%BD%E9%C8%EB%D5%C5%BD%DC%D0%BB%C4%C8" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B5%CB%D7%CF%C6%E5%BD%E9%C8%EB%D5%C5%BD%DC%D0%BB%C4%C8">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B5%CB%D7%CF%C6%E5%BD%E9%C8%EB%D5%C5%BD%DC%D0%BB%C4%C8">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B5%CB%D7%CF%C6%E5%BD%E9%C8%EB%D5%C5%BD%DC%D0%BB%C4%C8">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">123396</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">20</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D1%EB%CA%D3%D6%F7%B3%D6%C8%CB%BA%DC%C7%EE">央视主持人很穷</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D1%EB%CA%D3%D6%F7%B3%D6%C8%CB%BA%DC%C7%EE" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D1%EB%CA%D3%D6%F7%B3%D6%C8%CB%BA%DC%C7%EE">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D1%EB%CA%D3%D6%F7%B3%D6%C8%CB%BA%DC%C7%EE">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D1%EB%CA%D3%D6%F7%B3%D6%C8%CB%BA%DC%C7%EE">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">122823</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">21</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B4%AB%C1%D6%D6%BE%C1%E1%D0%D8%B2%BF%D6%B5%B0%D9%CD%F2">传林志玲胸部值百万</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B4%AB%C1%D6%D6%BE%C1%E1%D0%D8%B2%BF%D6%B5%B0%D9%CD%F2" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B4%AB%C1%D6%D6%BE%C1%E1%D0%D8%B2%BF%D6%B5%B0%D9%CD%F2">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B4%AB%C1%D6%D6%BE%C1%E1%D0%D8%B2%BF%D6%B5%B0%D9%CD%F2">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B4%AB%C1%D6%D6%BE%C1%E1%D0%D8%B2%BF%D6%B5%B0%D9%CD%F2">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">120950</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">22</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%BD%CC%CA%A6%B9%E0%D1%A7%C9%FA%B6%E9%CC%A5%D2%A9">教师灌学生堕胎药</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%BD%CC%CA%A6%B9%E0%D1%A7%C9%FA%B6%E9%CC%A5%D2%A9" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%BD%CC%CA%A6%B9%E0%D1%A7%C9%FA%B6%E9%CC%A5%D2%A9">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BD%CC%CA%A6%B9%E0%D1%A7%C9%FA%B6%E9%CC%A5%D2%A9">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BD%CC%CA%A6%B9%E0%D1%A7%C9%FA%B6%E9%CC%A5%D2%A9">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">116036</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">23</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B5%C2%B9%FA%D6%C2%C3%FC%C8%F5%B5%E3">德国致命弱点</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B5%C2%B9%FA%D6%C2%C3%FC%C8%F5%B5%E3" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B5%C2%B9%FA%D6%C2%C3%FC%C8%F5%B5%E3">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B5%C2%B9%FA%D6%C2%C3%FC%C8%F5%B5%E3">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B5%C2%B9%FA%D6%C2%C3%FC%C8%F5%B5%E3">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">114030</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">24</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D3%C0%D6%DD%D3%D7%C5%AE%C2%F4%D2%F9%B0%B8">永州幼女卖淫案</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D3%C0%D6%DD%D3%D7%C5%AE%C2%F4%D2%F9%B0%B8" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D3%C0%D6%DD%D3%D7%C5%AE%C2%F4%D2%F9%B0%B8">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D3%C0%D6%DD%D3%D7%C5%AE%C2%F4%D2%F9%B0%B8">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D3%C0%D6%DD%D3%D7%C5%AE%C2%F4%D2%F9%B0%B8">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fall">113080</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">25</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%CE%E5%D0%C7%BC%B6%C3%E2%B7%D1%B9%AB%B2%DE">五星级免费公厕</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%CE%E5%D0%C7%BC%B6%C3%E2%B7%D1%B9%AB%B2%DE" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%CE%E5%D0%C7%BC%B6%C3%E2%B7%D1%B9%AB%B2%DE">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CE%E5%D0%C7%BC%B6%C3%E2%B7%D1%B9%AB%B2%DE">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CE%E5%D0%C7%BC%B6%C3%E2%B7%D1%B9%AB%B2%DE">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">112990</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">26</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C9%AD%B5%FA%CF%EB%D1%A7%BF%AA%B3%B5">森碟想学开车</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C9%AD%B5%FA%CF%EB%D1%A7%BF%AA%B3%B5" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C9%AD%B5%FA%CF%EB%D1%A7%BF%AA%B3%B5">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C9%AD%B5%FA%CF%EB%D1%A7%BF%AA%B3%B5">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C9%AD%B5%FA%CF%EB%D1%A7%BF%AA%B3%B5">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">111479</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">27</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B5%C2%B9%FA7%BD%AB%C8%BE%B2%A1">德国7将染病</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B5%C2%B9%FA7%BD%AB%C8%BE%B2%A1" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B5%C2%B9%FA7%BD%AB%C8%BE%B2%A1">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B5%C2%B9%FA7%BD%AB%C8%BE%B2%A1">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B5%C2%B9%FA7%BD%AB%C8%BE%B2%A1">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">109831</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">28</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B0%A2%B8%F9%CD%A2%C8%AB%B6%D3%C2%E3%C5%C4">阿根廷全队裸拍</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B0%A2%B8%F9%CD%A2%C8%AB%B6%D3%C2%E3%C5%C4" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B0%A2%B8%F9%CD%A2%C8%AB%B6%D3%C2%E3%C5%C4">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B0%A2%B8%F9%CD%A2%C8%AB%B6%D3%C2%E3%C5%C4">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B0%A2%B8%F9%CD%A2%C8%AB%B6%D3%C2%E3%C5%C4">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">108472</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">29</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B0%CD%CE%F7vs%B8%E7%C2%D7%B1%C8%D1%C7">巴西vs哥伦比亚</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B0%CD%CE%F7vs%B8%E7%C2%D7%B1%C8%D1%C7" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B0%CD%CE%F7vs%B8%E7%C2%D7%B1%C8%D1%C7">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B0%CD%CE%F7vs%B8%E7%C2%D7%B1%C8%D1%C7">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B0%CD%CE%F7vs%B8%E7%C2%D7%B1%C8%D1%C7">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fall">107660</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">30</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%CE%D2%B5%C4%C7%E0%B4%BA%B8%DF%B0%CB%B6%C8">我的青春高八度</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%CE%D2%B5%C4%C7%E0%B4%BA%B8%DF%B0%CB%B6%C8" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%CE%D2%B5%C4%C7%E0%B4%BA%B8%DF%B0%CB%B6%C8">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CE%D2%B5%C4%C7%E0%B4%BA%B8%DF%B0%CB%B6%C8">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CE%D2%B5%C4%C7%E0%B4%BA%B8%DF%B0%CB%B6%C8">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">106237</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">31</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%CC%A8%CD%E5%D7%EE%C3%C0%CB%AB%B0%FB%CC%A5">台湾最美双胞胎</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%CC%A8%CD%E5%D7%EE%C3%C0%CB%AB%B0%FB%CC%A5" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%CC%A8%CD%E5%D7%EE%C3%C0%CB%AB%B0%FB%CC%A5">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CC%A8%CD%E5%D7%EE%C3%C0%CB%AB%B0%FB%CC%A5">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CC%A8%CD%E5%D7%EE%C3%C0%CB%AB%B0%FB%CC%A5">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fall">102364</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">32</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B0%CD%CE%F7%B9%FA%C6%EC%D4%E2%B7%D9%C9%D5">巴西国旗遭焚烧</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B0%CD%CE%F7%B9%FA%C6%EC%D4%E2%B7%D9%C9%D5" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B0%CD%CE%F7%B9%FA%C6%EC%D4%E2%B7%D9%C9%D5">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B0%CD%CE%F7%B9%FA%C6%EC%D4%E2%B7%D9%C9%D5">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B0%CD%CE%F7%B9%FA%C6%EC%D4%E2%B7%D9%C9%D5">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">94650</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">33</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%CA%DE%CA%DE%C0%CF%B9%AB">兽兽老公</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%CA%DE%CA%DE%C0%CF%B9%AB" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%CA%DE%CA%DE%C0%CF%B9%AB">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CA%DE%CA%DE%C0%CF%B9%AB">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CA%DE%CA%DE%C0%CF%B9%AB">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">89576</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">34</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D0%C2%C0%C9%C4%D1%CD%FC%BE%C9%B0%AE%BB%E9%C0%F1%CF%D6%B3%A1%CC%D3%BB%E9">新郎难忘旧爱婚礼现场逃婚</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D0%C2%C0%C9%C4%D1%CD%FC%BE%C9%B0%AE%BB%E9%C0%F1%CF%D6%B3%A1%CC%D3%BB%E9" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D0%C2%C0%C9%C4%D1%CD%FC%BE%C9%B0%AE%BB%E9%C0%F1%CF%D6%B3%A1%CC%D3%BB%E9">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D0%C2%C0%C9%C4%D1%CD%FC%BE%C9%B0%AE%BB%E9%C0%F1%CF%D6%B3%A1%CC%D3%BB%E9">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D0%C2%C0%C9%C4%D1%CD%FC%BE%C9%B0%AE%BB%E9%C0%F1%CF%D6%B3%A1%CC%D3%BB%E9">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">88309</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">35</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C3%FC%D6%D0%D7%A2%B6%A8%CE%D2%B0%AE%C4%E3%BA%AB%B0%E6">命中注定我爱你韩版</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C3%FC%D6%D0%D7%A2%B6%A8%CE%D2%B0%AE%C4%E3%BA%AB%B0%E6" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C3%FC%D6%D0%D7%A2%B6%A8%CE%D2%B0%AE%C4%E3%BA%AB%B0%E6">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C3%FC%D6%D0%D7%A2%B6%A8%CE%D2%B0%AE%C4%E3%BA%AB%B0%E6">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C3%FC%D6%D0%D7%A2%B6%A8%CE%D2%B0%AE%C4%E3%BA%AB%B0%E6">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">86893</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">36</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C9%ED%B7%DD%D6%A4%CC%AB%B3%F3%BF%C9%D6%D8%C5%C4">身份证太丑可重拍</a>
+			<span class="icon icon-new"></span>						<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C9%ED%B7%DD%D6%A4%CC%AB%B3%F3%BF%C9%D6%D8%C5%C4" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C9%ED%B7%DD%D6%A4%CC%AB%B3%F3%BF%C9%D6%D8%C5%C4">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C9%ED%B7%DD%D6%A4%CC%AB%B3%F3%BF%C9%D6%D8%C5%C4">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C9%ED%B7%DD%D6%A4%CC%AB%B3%F3%BF%C9%D6%D8%C5%C4">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">85217</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">37</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C8%D5%B1%BE%D5%F7%B1%F8%D0%FB%B4%AB">日本征兵宣传</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C8%D5%B1%BE%D5%F7%B1%F8%D0%FB%B4%AB" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C8%D5%B1%BE%D5%F7%B1%F8%D0%FB%B4%AB">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C8%D5%B1%BE%D5%F7%B1%F8%D0%FB%B4%AB">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C8%D5%B1%BE%D5%F7%B1%F8%D0%FB%B4%AB">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fall">84026</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">38</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D6%A3%D0%C0%D2%CB%C5%D6%BB%D8180%BD%EF">郑欣宜胖回180斤</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D6%A3%D0%C0%D2%CB%C5%D6%BB%D8180%BD%EF" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D6%A3%D0%C0%D2%CB%C5%D6%BB%D8180%BD%EF">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D6%A3%D0%C0%D2%CB%C5%D6%BB%D8180%BD%EF">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D6%A3%D0%C0%D2%CB%C5%D6%BB%D8180%BD%EF">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">83725</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">39</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C3%C0%C5%AE%D0%FD%D7%AA%D2%BB%D7%D6%C2%ED%B1%AC%BA%EC">美女旋转一字马爆红</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C3%C0%C5%AE%D0%FD%D7%AA%D2%BB%D7%D6%C2%ED%B1%AC%BA%EC" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C3%C0%C5%AE%D0%FD%D7%AA%D2%BB%D7%D6%C2%ED%B1%AC%BA%EC">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C3%C0%C5%AE%D0%FD%D7%AA%D2%BB%D7%D6%C2%ED%B1%AC%BA%EC">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C3%C0%C5%AE%D0%FD%D7%AA%D2%BB%D7%D6%C2%ED%B1%AC%BA%EC">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">80184</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">40</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%BC%CB%C5%AE%B0%AE%C1%BD%B9%FA%C7%F2%C3%D4">妓女爱两国球迷</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%BC%CB%C5%AE%B0%AE%C1%BD%B9%FA%C7%F2%C3%D4" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%BC%CB%C5%AE%B0%AE%C1%BD%B9%FA%C7%F2%C3%D4">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BC%CB%C5%AE%B0%AE%C1%BD%B9%FA%C7%F2%C3%D4">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BC%CB%C5%AE%B0%AE%C1%BD%B9%FA%C7%F2%C3%D4">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fall">76266</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">41</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C4%D0%D7%D3%B3%AC%CA%D0%B9%BA%CE%EF%B1%BB%B9%ED%C9%CF%C9%ED">男子超市购物被鬼上身</a>
+			<span class="icon icon-new"></span>						<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C4%D0%D7%D3%B3%AC%CA%D0%B9%BA%CE%EF%B1%BB%B9%ED%C9%CF%C9%ED" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C4%D0%D7%D3%B3%AC%CA%D0%B9%BA%CE%EF%B1%BB%B9%ED%C9%CF%C9%ED">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C4%D0%D7%D3%B3%AC%CA%D0%B9%BA%CE%EF%B1%BB%B9%ED%C9%CF%C9%ED">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C4%D0%D7%D3%B3%AC%CA%D0%B9%BA%CE%EF%B1%BB%B9%ED%C9%CF%C9%ED">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">75590</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">42</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%CD%F5%B7%C6%B1%D9%D2%A5%CE%FC%B6%BE">王菲辟谣吸毒</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%CD%F5%B7%C6%B1%D9%D2%A5%CE%FC%B6%BE" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%CD%F5%B7%C6%B1%D9%D2%A5%CE%FC%B6%BE">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CD%F5%B7%C6%B1%D9%D2%A5%CE%FC%B6%BE">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CD%F5%B7%C6%B1%D9%D2%A5%CE%FC%B6%BE">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">75387</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">43</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%BA%CE%BD%E0%B2%FA%D7%D3">何洁产子</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%BA%CE%BD%E0%B2%FA%D7%D3" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%BA%CE%BD%E0%B2%FA%D7%D3">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BA%CE%BD%E0%B2%FA%D7%D3">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BA%CE%BD%E0%B2%FA%D7%D3">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">71751</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">44</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C6%DF%C6%DF%CA%C2%B1%E4">七七事变</a>
+			<span class="icon icon-new"></span>						<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C6%DF%C6%DF%CA%C2%B1%E4" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C6%DF%C6%DF%CA%C2%B1%E4">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C6%DF%C6%DF%CA%C2%B1%E4">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C6%DF%C6%DF%CA%C2%B1%E4">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">71726</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">45</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%C4%DA%C2%ED%B6%FB%D6%D8%C9%CB%B8%E6%B1%F0">内马尔重伤告别</a>
+			<span class="icon icon-new"></span>						<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%C4%DA%C2%ED%B6%FB%D6%D8%C9%CB%B8%E6%B1%F0" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%C4%DA%C2%ED%B6%FB%D6%D8%C9%CB%B8%E6%B1%F0">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C4%DA%C2%ED%B6%FB%D6%D8%C9%CB%B8%E6%B1%F0">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C4%DA%C2%ED%B6%FB%D6%D8%C9%CB%B8%E6%B1%F0">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">70694</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">46</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D5%C2%D7%D3%E2%F9%C9%EE%D2%B9%D3%EB%CD%F4%B7%E5%C0%EB%B3%A1">章子怡深夜与汪峰离场</a>
+			<span class="icon icon-new"></span>						<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D5%C2%D7%D3%E2%F9%C9%EE%D2%B9%D3%EB%CD%F4%B7%E5%C0%EB%B3%A1" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D5%C2%D7%D3%E2%F9%C9%EE%D2%B9%D3%EB%CD%F4%B7%E5%C0%EB%B3%A1">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D5%C2%D7%D3%E2%F9%C9%EE%D2%B9%D3%EB%CD%F4%B7%E5%C0%EB%B3%A1">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D5%C2%D7%D3%E2%F9%C9%EE%D2%B9%D3%EB%CD%F4%B7%E5%C0%EB%B3%A1">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">70321</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">47</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B0%DD%C8%CA%BE%AA%CF%D6%C9%F1%D4%A4%B2%E2">拜仁惊现神预测</a>
+			<span class="icon icon-new"></span>						<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B0%DD%C8%CA%BE%AA%CF%D6%C9%F1%D4%A4%B2%E2" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B0%DD%C8%CA%BE%AA%CF%D6%C9%F1%D4%A4%B2%E2">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B0%DD%C8%CA%BE%AA%CF%D6%C9%F1%D4%A4%B2%E2">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B0%DD%C8%CA%BE%AA%CF%D6%C9%F1%D4%A4%B2%E2">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">66422</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">48</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%CF%E3%B8%DB%D1%DD%D4%B1%C2%F3%BB%F9%B2%A1%CA%C5">香港演员麦基病逝</a>
+			<span class="icon icon-new"></span>						<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%CF%E3%B8%DB%D1%DD%D4%B1%C2%F3%BB%F9%B2%A1%CA%C5" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%CF%E3%B8%DB%D1%DD%D4%B1%C2%F3%BB%F9%B2%A1%CA%C5">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CF%E3%B8%DB%D1%DD%D4%B1%C2%F3%BB%F9%B2%A1%CA%C5">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CF%E3%B8%DB%D1%DD%D4%B1%C2%F3%BB%F9%B2%A1%CA%C5">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-rise">66302</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">49</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%D6%DC%BD%DC%C2%D7%C0%A5%C1%E8%C2%F2%BC%D2%BE%DF">周杰伦昆凌买家具</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%D6%DC%BD%DC%C2%D7%C0%A5%C1%E8%C2%F2%BC%D2%BE%DF" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%D6%DC%BD%DC%C2%D7%C0%A5%C1%E8%C2%F2%BC%D2%BE%DF">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D6%DC%BD%DC%C2%D7%C0%A5%C1%E8%C2%F2%BC%D2%BE%DF">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D6%DC%BD%DC%C2%D7%C0%A5%C1%E8%C2%F2%BC%D2%BE%DF">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">63354</span>
+					</td>
+	</tr>
+		<tr >
+		<td class="first">
+							<span class="num-normal">50</span>
+					</td>
+		<td class="keyword">
+			<a class="list-title" target="_blank" href="./detail?b=42&c=12&w=%B3%C9%B6%BC71%CB%EA%C6%C5%C6%C5%C4%C3%BC%DD%D5%D5">成都71岁婆婆拿驾照</a>
+									<a href="http://www.baidu.com/baidu?cl=3&amp;tn=baidutop10&amp;fr=top1000&amp;wd=%B3%C9%B6%BC71%CB%EA%C6%C5%C6%C5%C4%C3%BC%DD%D5%D5" class="icon-search" target="_blank">search</a>
+		</td>
+		<td class="tc">
+																		<a target="_blank" href="http://baike.baidu.com/list-php/dispose/searchword.php?pic=1&word=%B3%C9%B6%BC71%CB%EA%C6%C5%C6%C5%C4%C3%BC%DD%D5%D5">简介</a>
+																				<a target="_blank" href="http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B3%C9%B6%BC71%CB%EA%C6%C5%C6%C5%C4%C3%BC%DD%D5%D5">新闻</a>
+																				<a target="_blank" href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B3%C9%B6%BC71%CB%EA%C6%C5%C6%C5%C4%C3%BC%DD%D5%D5">视频</a>
+												
+		</td>
+		<td class="last">
+			 				<span class="icon-fair">61993</span>
+					</td>
+	</tr>
+	</table>
+					</div>
+
+	            </div>
+    </div>
+
+            <div class="footer">
+    &copy;2014 Baidu
+    <a target="_blank" href="http://www.baidu.com/duty/index.html">使用百度前必读</a>
+    <a href="./help">关于百度风云榜</a>
+	<span class="follow">关注我们：</span><a target="_blank" class="weibo" href="http://e.weibo.com/baidutop">&nbsp;</a>
+</div>
+    
+        </div>
+		<div class="fixed_rbox"><a class="fixed_rbox_inner" href="javascript:;">风云榜官方微信<img style="display:block;margin-left:5px;" width="90" height="90" src="http://top.baidu.com/frontend/static/common/wx.jpg"/>扫描关注我们</a></div>
+
+		<script>var toptrackserver="http://top.baidu.com/frontend/static";var href = location.href, domains = ["top.baidu.com.cn","top.baidu.com"];for(var i = 0, len = domains.length; i < len; i++){if(href.indexOf(domains[i])!==-1){BASE_URL = "http://"+domains[i]+"/";BASEURL = BASE_URL+"frontend";break;}}var BASE_DATE = "2014年07月11日", online = true</script>
+		
+		
+                
+    					
+            					
+            					
+            					
+            					
+            				
+          
+
+    <style>#bdshare{z-index:1;} .bdshareBox_r{width:25px;padding:2px 0 4px;border:1px solid #d9d9de;border-left:0;}</style>
+    <script type="text/javascript">var bds_config = {};</script>
+    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=655757" ></script>
+    <div id="bdshare" data="" style="display:none;position:absolute;top:0;left:0;" class="bdshareBox bdshareBox_r bdshare_t bds_tools get-codes-bdshare"><a class="bds_qzone"></a><a class="bds_tsina"></a><a class="bds_tqq"></a><a class="bds_renren"></a><a class="bds_baidu"></a><a class="bds_tieba"></a></div>
+    <script>
+$(function(){
+var shareobj = $("#main").offset(), shareleft = shareobj.left + 959, sharetop = shareobj.top;
+//showbdshare(shareleft, sharetop, "{'text':'#2014年07月11日七日关注排行榜#【1】古剑奇谭【2】少女为买ipad拍裸照赚钱【3】巴西vs德国【4】中国乳神胸夹手机【5】英国王妃离婚索赔2亿 分享自@百度搜索风云榜','title':'#2014年07月11日七日关注排行榜#【1】古剑奇谭【2】少女为买ipad拍裸照赚钱【3】巴西vs德国【4】中国乳神胸夹手机【5】英国王妃离婚索赔2亿 分享自@百度搜索风云榜','pic':'http://top.baidu.com/buzz/shot/42.png'}");	
+})
+    </script>
+
+		<div id="bdshare" data="" style="display:none;position:absolute;top:0;left:0;" class="bdshareBox bdshare_t bds_tools get-codes-bdshare"><a class="bds_qzone"></a><a class="bds_tsina"></a><a class="bds_tqq"></a><a class="bds_renren"></a><a class="bds_baidu"></a><a class="bds_tieba"></a></div>
+<script type="text/javascript" id="bdshell_js"></script>
+					<script type="text/javascript" src="http://top.baidu.com/frontend/build/common/common.js?v=1603164988"></script>
+		
+		
+
+<script type="text/javascript" src="http://top.baidu.com/frontend/build/buzz/buzz.js?v=1603164988"></script>
+
+		<script src="http://top.baidu.com/frontend/static/embed/nsclick.js?v=1603164988" type="text/javascript"></script>
+		<div style="display:none"><script type="text/javascript">var clickmonkey ={log: function(){}};if(typeof ClickMonkey != "undefined"){clickmonkey = ClickMonkey(false);}var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F79a0e9c520104773e13ccd072bc956aa' type='text/javascript'%3E%3C/script%3E"));</script></div>
+    </body>
+</html>
