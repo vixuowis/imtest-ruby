@@ -15,6 +15,7 @@ def test_file(target_file, out_file,type)
 
   # 打开测试文档
   `osascript -e 'tell application "Finder"' -e 'open "Macintosh HD:Users:Simon:Playground:imtest-ruby:#{out_file.split("/").join(":")}"' -e 'end tell'`
+#  `osascript -e 'tell application "Finder"' -e 'open "OS X:Users:appletest:Playground:imtest-ruby:#{out_file.split("/").join(":")}"' -e 'end tell'`
 
   sleep(1)
 
@@ -58,5 +59,5 @@ end
 
 # test_file("dict/short_hot_pinyin.txt","output/local_hot_out.txt",29)
 # test_file("dict/short_pinyin.txt","output/qq_short_out.txt",31)
-test_file("dict/short_hot_pinyin.txt","output/sogou_hot_out.txt",31)
+# test_file("dict/short_hot_pinyin.txt","output/sogou_hot_out.txt",31)
 # test_file("dict/sc_pinyin.txt","output/local_out.txt",29)
