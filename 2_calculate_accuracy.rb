@@ -2,8 +2,8 @@
 def read_out_file(filename)
   arr = {}  
   File.open(filename).each do |l|
-    puts l.split("：").to_s
-    arr[l.split("：")[0].to_i] = l.split("：")[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
+    puts l.split(":").to_s
+    arr[l.split(":")[0].to_i] = l.split(":")[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
   end
   return arr
 end
@@ -21,11 +21,12 @@ def count_accuracy(std1,std2,std3,elem_index)
   return std1,std2,std3
 end
 
-ciku_file = "dict/sc_pinyin.txt"
+# ciku_file = "dict/sc_pinyin.txt"
 # ciku_file = "dict/short_pinyin.txt"
-# local_arr = read_out_file("output/local_out.txt")
-# local_arr = read_out_file("output/qq_out.txt")
-local_arr = read_out_file("output/sogou_short_out.txt")
+ciku_file = "dict/short_hot_pinyin.txt"
+local_arr = read_out_file("output/local_hot_out.txt")
+# local_arr = read_out_file("output/qq_short_out.txt")
+# local_arr = read_out_file("output/sogou_short_out.txt")
 puts local_arr.to_s
 # read ciku file
 
@@ -52,8 +53,25 @@ puts "std1 = #{std1*1.0/t}"
 puts "std2 = #{std2*1.0/t}"
 puts "std3 = #{std3*1.0/t}"
 
+
 ### short pinyin
+## hot words: 684 from sogou
+# local
+# std1 = 0.013157894736842105
+# std2 = 0.014619883040935672
+# std3 = 0.01608187134502924
+
+# qq
+
+# sogou
+
 ## big data scale: 1925 from tencent data
+# local
+
+# qq
+# std1 = 0.24415584415584415
+# std2 = 0.3693506493506494
+# std3 = 0.4025974025974026
 
 # sogou
 # std1 = 0.6763636363636364
@@ -62,7 +80,6 @@ puts "std3 = #{std3*1.0/t}"
 
 ### full pinyin
 ## big data scale: 1925 from tencent data
-
 # local
 # std1 = 0.9215584415584416
 # std2 = 0.9807792207792208
