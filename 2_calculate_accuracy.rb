@@ -2,8 +2,8 @@
 def read_out_file(filename)
   arr = {}  
   File.open(filename).each do |l|
-    puts l.split("：").to_s
-    arr[l.split("：")[0].to_i] = l.split("：")[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
+    puts l.split(":").to_s
+    arr[l.split(":")[0].to_i] = l.split(":")[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
   end
   return arr
 end
@@ -46,6 +46,7 @@ end
 # out_arr = read_out_file("output/local_out.txt")
 # out_arr = read_out_file("output/qq_out.txt")
 # out_arr = read_out_file("output/sogou_out.txt")
+
 puts out_arr.to_s
 # read ciku file
 
@@ -114,6 +115,9 @@ puts "std3 = #{std3*1.0/t}"
 ### short pinyin
 ## big data scale: 1925 from tencent data
 # local
+# std1 = 0.24012474012474014
+# std2 = 0.6902286902286903
+# std3 = 0.7188149688149689
 
 # qq
 # std1 = 0.24415584415584415
