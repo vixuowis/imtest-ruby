@@ -1,9 +1,9 @@
 
-def read_out_file(filename)
-  arr = {}  
+def read_out_file(filename,split = "：")
+  arr = {}
   File.open(filename).each do |l|
-    puts l.split(":").to_s
-    arr[l.split(":")[0].to_i] = l.split(":")[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
+    puts l.split(split).to_s
+    arr[l.split(split)[0].to_i] = l.split(split)[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
   end
   return arr
 end
@@ -27,7 +27,7 @@ end
 # ciku_file = "dict/short_baiduhot_pinyin.txt"
 # ciku_file = "dict/full_baiduhot_pinyin.txt"
 
-# out_arr = read_out_file("output/local_baidufull_out.txt")
+# out_arr = read_out_file("output/local_baidufull_out.txt",":")
 # out_arr = read_out_file("output/qq_baidufull_out.txt")
 # out_arr = read_out_file("output/sogou_baidufull_out.txt")
 
@@ -78,17 +78,35 @@ puts "std3 = #{std3*1.0/t}"
 ### data: 217 from baidu hot word
 ## short: short_baiduhot_pinyin.txt
 # local
+# std1 = 0.09216589861751152
+# std2 = 0.15668202764976957
+# std3 = 0.17050691244239632
 
 # qq
+# std1 = 0.2119815668202765
+# std2 = 0.2857142857142857
+# std3 = 0.3225806451612903
 
 # sogou
+# std1 = 0.2488479262672811
+# std2 = 0.3548387096774194
+# std3 = 0.41935483870967744
 
 ## short: full_baiduhot_pinyin.txt
 # local
+# std1 = 0.631336405529954
+# std2 = 0.7327188940092166
+# std3 = 0.7511520737327189
 
 # qq
+# std1 = 0.6820276497695853
+# std2 = 0.7603686635944701
+# std3 = 0.7649769585253456
 
 # sogou
+# std1 = 0.6866359447004609
+# std2 = 0.7880184331797235
+# std3 = 0.8110599078341014
 
 #**************************
 #       EXPERIMENT 4
