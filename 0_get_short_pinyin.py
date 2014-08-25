@@ -8,8 +8,8 @@ if __name__ == "__main__":
   test.load_word()
   # string = "钓鱼岛是中国的"
   f = open("dict/"+sys.argv[1],'r')
-  f2 = open("dict/"+sys.argv[2],'w')
-  f3 = open("dict/"+sys.argv[3],'w')
+  f2 = open("dict/"+"full_"+sys.argv[1],'w')
+  f3 = open("dict/"+"short_"+sys.argv[1],'w')
   for i in f:
     # ch_str = i.split(" ")[1].strip()
     ch_str = i.strip()
@@ -33,3 +33,5 @@ if __name__ == "__main__":
   # print "out: %s" % str(test.hanzi2pinyin(string=string))
   # print "out: %s" % test.hanzi2pinyin_split(string=string, split="-")
 
+  # usage:
+  # python 0_get_short_pinyin.py inputfile outputfile_fullpinyin outputfile_shortpinyin

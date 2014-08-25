@@ -74,6 +74,41 @@ puts "std2 = #{std2*1.0/t}"
 puts "std3 = #{std3*1.0/t}"
 
 #**************************
+#       EXPERIMENT 6 - 2014/8/25
+### data: 2749 combined hot words from baidu/sogou/tencent
+## short: short_integrate_raw.txt
+# local
+# std1 = 
+# std2 = 
+# std3 = 
+
+# qq
+# std1 = 
+# std2 = 
+# std3 = 
+
+# sogou
+# std1 = 
+# std2 = 
+# std3 = 
+
+## full: full_integrate_raw.txt
+# local
+# std1 = 
+# std2 = 
+# std3 = 
+
+# qq
+# std1 = 
+# std2 = 
+# std3 = 
+
+# sogou
+# std1 = 
+# std2 = 
+# std3 = 
+
+#**************************
 #       EXPERIMENT 5
 ### data: 217 from baidu hot word
 ## short: short_baiduhot_pinyin.txt
@@ -92,7 +127,7 @@ puts "std3 = #{std3*1.0/t}"
 # std2 = 0.3548387096774194
 # std3 = 0.41935483870967744
 
-## short: full_baiduhot_pinyin.txt
+## full: full_baiduhot_pinyin.txt
 # local
 # std1 = 0.631336405529954
 # std2 = 0.7327188940092166

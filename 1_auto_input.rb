@@ -20,7 +20,7 @@ def test_file(target_file, out_file,type)
   sleep(1)
 
   cmd_start = "-e 'tell application \"System Events\"'"
-  cmd_delay = "-e 'delay 0.1'"
+  cmd_delay = "-e 'delay 0.2'"
   cmd_space = "-e 'keystroke space'"
   cmd_enter = "-e 'keystroke return'"
   cmd_stop = "-e 'keystroke \",\"'"
@@ -51,14 +51,15 @@ def test_file(target_file, out_file,type)
     #   sleep(10)
     # end
     # break
-    # if index==30
-    #   break
-    # end
+    if index==2
+      break
+    end
+
   end
 end
 
 ## EXPERIMENT 5
-# test_file("dict/short_baiduhot_pinyin.txt","output/local_baidushort_out.txt",29)
+test_file("dict/short_baiduhot_pinyin.txt","output/local_baidushort_out.txt",29)
 # test_file("dict/short_baiduhot_pinyin.txt","output/qq_baidushort_out.txt",31)
 # test_file("dict/short_baiduhot_pinyin.txt","output/sogou_baidushort_out.txt",31)
 
