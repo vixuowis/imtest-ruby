@@ -51,15 +51,24 @@ def test_file(target_file, out_file,type)
     #   sleep(10)
     # end
     # break
-    if index==2
+    if index==1
       break
     end
 
   end
 end
 
+## EXPERIMENT 6
+# test_file("dict/short_integrate_raw.txt","output/local_integrate_short_out.txt",29)
+# test_file("dict/short_integrate_raw.txt","output/qq_integrate_short_out.txt",31)
+# test_file("dict/short_integrate_raw.txt","output/sogou_integrate_short_out.txt",31)
+
+# test_file("dict/full_integrate_raw.txt","output/local_integrate_full_out.txt",29)
+# test_file("dict/full_integrate_raw.txt","output/qq_integrate_full_out.txt",31)
+# test_file("dict/full_integrate_raw.txt","output/sogou_integrate_full_out.txt",31)
+
 ## EXPERIMENT 5
-test_file("dict/short_baiduhot_pinyin.txt","output/local_baidushort_out.txt",29)
+# test_file("dict/short_baiduhot_pinyin.txt","output/local_baidushort_out.txt",29)
 # test_file("dict/short_baiduhot_pinyin.txt","output/qq_baidushort_out.txt",31)
 # test_file("dict/short_baiduhot_pinyin.txt","output/sogou_baidushort_out.txt",31)
 
