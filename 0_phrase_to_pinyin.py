@@ -6,10 +6,10 @@ import sys
 if __name__ == "__main__":
   test = PinYin()
   test.load_word()
-  # string = "钓鱼岛是中国的"
-  f = open("dict/"+sys.argv[1],'r')
-  f2 = open("dict/"+"full_"+sys.argv[1],'w')
-  f3 = open("dict/"+"short_"+sys.argv[1],'w')
+  # string = "测试文本"
+  f = open(sys.argv[1],'r')
+  f2 = open("dict/"+"short_"+sys.argv[1].split("/")[-1],'w')
+  f3 = open("dict/"+"full_"+sys.argv[1].split("/")[-1],'w')
   for i in f:
     # ch_str = i.split(" ")[1].strip()
     ch_str = i.strip()
@@ -34,4 +34,4 @@ if __name__ == "__main__":
   # print "out: %s" % test.hanzi2pinyin_split(string=string, split="-")
 
   # usage:
-  # python 0_get_short_pinyin.py inputfile outputfile_fullpinyin outputfile_shortpinyin
+  # python 0_get_short_pinyin.py inputfile

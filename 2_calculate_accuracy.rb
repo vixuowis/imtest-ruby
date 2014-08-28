@@ -1,9 +1,9 @@
 
-def read_out_file(filename,split = "：")
+def read_out_file(filename)
   arr = {}
   File.open(filename).each do |l|
-    puts l.split(split).to_s
-    arr[l.split(split)[0].to_i] = l.split(split)[1].split("，").map{|x| x.strip}.delete_if{|a| a==""}
+    puts l.split(/:|：/).to_s
+    arr[l.split(/:|：/)[0].to_i] = l.split(/:|：/)[1].split(/，|,/).map{|x| x.strip}.delete_if{|a| a==""}
   end
   return arr
 end
@@ -21,32 +21,11 @@ def count_accuracy(std1,std2,std3,elem_index)
   return std1,std2,std3
 end
 
-# ciku_file = "dict/sc_pinyin.txt"
-# ciku_file = "dict/short_pinyin.txt"
-# ciku_file = "dict/short_hot_pinyin.txt"
-# ciku_file = "dict/short_baiduhot_pinyin.txt"
-# ciku_file = "dict/full_baiduhot_pinyin.txt"
+#############################
 
-# out_arr = read_out_file("output/local_baidufull_out.txt",":")
-# out_arr = read_out_file("output/qq_baidufull_out.txt")
-# out_arr = read_out_file("output/sogou_baidufull_out.txt")
-
-# out_arr = read_out_file("output/local_baidushort_out.txt")
-# out_arr = read_out_file("output/qq_baidushort_out.txt")
-# out_arr = read_out_file("output/sogou_baidushort_out.txt")
-
-# out_arr = read_out_file("output/local_short_out.txt")
-# out_arr = read_out_file("output/qq_short_out.txt")
-# out_arr = read_out_file("output/sogou_short_out.txt")
-
-# out_arr = read_out_file("output/local_hot_out.txt")
-# out_arr = read_out_file("output/qq_hot_out.txt")
-# out_arr = read_out_file("output/sogou_hot_out.txt")
-
-# out_arr = read_out_file("output/local_out.txt")
-# out_arr = read_out_file("output/qq_out.txt")
-# out_arr = read_out_file("output/sogou_out.txt")
-
+input_file = ARGV[0]
+output_file = ARGV[1]
+out_arr = read_out_file(output_file)
 puts out_arr.to_s
 # read ciku file
 
@@ -54,8 +33,9 @@ std1 =0 #首词 0
 std2 =0 #一屏内 <5
 std3 =0 #二屏内 <10
 
-File.open(ciku_file).each_with_index do |l,index|
-  elem_index = out_arr[index].index(l.split(" ")[1]) rescue next
+File.open(input_file).each_with_index do |l,index|
+  puts "#{out_arr[index+824].to_s} compare with #{l}"
+  elem_index = out_arr[index+824].index(l.strip()) rescue next
 
   puts "elem_index = #{elem_index}" if !elem_index.nil?
   puts "elem_index = nil" if elem_index.nil?
@@ -74,39 +54,39 @@ puts "std2 = #{std2*1.0/t}"
 puts "std3 = #{std3*1.0/t}"
 
 #**************************
-#       EXPERIMENT 6 - 2014/8/25
+#       EXPERIMENT 6 - 2014/8/27
 ### data: 2749 combined hot words from baidu/sogou/tencent
 ## short: short_integrate_raw.txt
 # local
-# std1 = 
-# std2 = 
-# std3 = 
+# std1 = 0.7901054929065114
+# std2 = 0.8526736995271008
+# std3 = 0.85994907238996
 
 # qq
-# std1 = 
-# std2 = 
-# std3 = 
+# std1 = 0.1851582393597672
+# std2 = 0.28082939250636596
+# std3 = 0.3117497271735176
 
 # sogou
-# std1 = 
-# std2 = 
-# std3 = 
+# std1 = 0.6304110585667515
+# std2 = 0.7926518734085122
+# std3 = 0.8250272826482358
 
 ## full: full_integrate_raw.txt
 # local
-# std1 = 
-# std2 = 
-# std3 = 
+# std1 = 0.7901054929065114
+# std2 = 0.8526736995271008
+# std3 = 0.85994907238996
 
 # qq
-# std1 = 
-# std2 = 
-# std3 = 
+# std1 = 0.7238995998544926
+# std2 = 0.7861040378319389
+# std3 = 0.79483448526737
 
 # sogou
-# std1 = 
-# std2 = 
-# std3 = 
+# std1 = 0.7690069116042197
+# std2 = 0.8170243724990905
+# std3 = 0.8272098945070935
 
 #**************************
 #       EXPERIMENT 5
