@@ -34,8 +34,8 @@ std2 =0 #一屏内 <5
 std3 =0 #二屏内 <10
 
 File.open(input_file).each_with_index do |l,index|
-  puts "#{out_arr[index+824].to_s} compare with #{l}"
-  elem_index = out_arr[index+824].index(l.strip()) rescue next
+  puts "#{out_arr[index].to_s} compare with #{l}"
+  elem_index = out_arr[index].index(l.strip()) rescue next
 
   puts "elem_index = #{elem_index}" if !elem_index.nil?
   puts "elem_index = nil" if elem_index.nil?
